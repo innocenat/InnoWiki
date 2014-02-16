@@ -1,0 +1,16 @@
+body {
+	padding-top: 50px;
+}
+.wikilink-notexist, .wikilink-notexist:hover, .wikilink-notexist:visited, .wikilink-notexist:active {
+	color: #a55858;
+}
+
+h1, h2 {
+	border-bottom: 1px solid #ccc;
+}
+
+.footer {
+	text-align:center;
+	color:#ccc;
+	padding:40px;
+}

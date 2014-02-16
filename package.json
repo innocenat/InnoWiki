@@ -1,0 +1,7 @@
+{
+  "name": "innowiki",
+  "preferGlobal": true,
+  "version": "0.3.0",
+  "author": "innocenat <innocenat@gmail.com>",
+  "description": "a simple statically generated wiki system"
+}
