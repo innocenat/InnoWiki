@@ -53,7 +53,7 @@ Command         | Display       | Target
 It is recommended to use wikilink to link all your page, in case URL or
 naming schema changed in future version. (Unlikely, but possible)
 
-For example of Wikilinke: [[Subgroup]]
+For example of Wikilink: [[Subgroup]]
 
 Usage
 -------------------------------------------------------------------------------
