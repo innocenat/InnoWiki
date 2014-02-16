@@ -69,30 +69,14 @@ function process_copy_dir(uri, target) {
 	});
 }
 
-function process_remove_dir(uri) {
-	files = fs.readdirSync(uri);
-
-	files.forEach(function (c) {
-		var new_path = path.join(uri, c);
-
-		var stat = fs.statSync(new_path);
-
-		if (stat.isDirectory()) {
-			process_remove_dir(new_path);
-		} else {
-			fs.unlinkSync(new_path);
-		}
-	});
-
-	fs.rmdirSync(uri);
-}
-
 try {
 	fs.mkdirSync('build');
 } catch (_) {}
 
 // Clean up
-process_remove_dir('build');
+try {
+		fs.unlinkSync('build/index.html');
+	} catch (_) {} // in case it doesn't exist
 
 // Copy blob
 process_copy_dir('blob', 'build');
